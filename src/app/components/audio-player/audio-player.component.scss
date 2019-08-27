@@ -1,6 +1,37 @@
-.progressbar {
-    height:30px;
-    background:red;
-    min-width: 1px;
-    width:1px;
+$timeWidth: 65;
+$height: 38;
+$btnWidth: 40;
+
+.section{
+    vertical-align: top;
+    display: inline-block;
+    height: #{$height + 'px'};
+}
+.section p{
+    margin:0;
+    padding:0;
+    padding-top:5px;
+}
+.btn{
+    cursor:pointer;
+    background:#ddd;
+    margin:0;
+    border-radius:0;
+}
+.time{
+    width: #{$timeWidth + 'px'};
+    text-align: center;    
+}
+.progress-lane{
+    position: relative;
+    width: calc(100% - #{(($timeWidth * 2) + ($btnWidth * 2) + 2) + 'px'});
+}
+.progress-lane .title{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:20px;
+    bottom:0;
+    right:0;
+    pointer-events: none;
 }

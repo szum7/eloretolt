@@ -1,5 +1,18 @@
-
-
+body .ui-slider.ui-slider-horizontal,
+body .ui-slider .ui-slider-handle{
+    height:38px;
+    border-radius:0;
+}
 body .ui-slider.ui-slider-horizontal{
-    height:10px;
+    background:#ddd;
+}
+body .ui-slider .ui-slider-handle{
+    border-radius:0;
+    border-color:#aaa;
+}
+body .ui-slider.ui-slider-horizontal .ui-slider-handle{
+    top:8px;
+}
+body .ui-corner-all{
+    border-radius:0;
 }

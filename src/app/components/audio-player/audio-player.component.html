@@ -1,10 +1,20 @@
-<div>
-    <button (click)="play()">PLAY</button>
-    <button (click)="pause()">PAUSE</button>
-    <button (click)="stop()">STOP</button>
-    <div class="progressbar" [ngStyle]="{
-        'width.%':progress, 
-        'background-color':colour
-    }"></div>
-    <p-slider [(ngModel)]="progressBar" [style]="{'width':'14em'}"></p-slider>
+<div class="track" *ngIf="isInited">
+    <div class="section btns">
+        <div class="btn play" *ngIf="true" (click)="play()">
+            <fa-icon icon="play"></fa-icon>
+        </div><div class="btn pause" *ngIf="false" (click)="pause()">
+            <fa-icon icon="pause"></fa-icon>
+        </div><div class="btn stop" (click)="stop()">
+            <fa-icon icon="stop"></fa-icon>
+        </div>
+    </div><div class="section time current-time">
+        <p>{{currentTime}}</p>
+    </div><div class="section progress-lane">
+        <p-slider [(ngModel)]="progressBar"></p-slider>
+        <div class="title">
+            <p>{{track.title}}</p>
+        </div>
+    </div><div class="section time duration">
+        <p>{{duration}}</p>
+    </div>
 </div>

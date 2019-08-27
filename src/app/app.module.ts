@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faInfoCircle, faCaretRight, faCaretLeft, faSun, faCog, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faPlay, faPause, faStop, faCaretRight, faCaretLeft, faSun, faCog, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { SliderModule } from 'primeng/slider';
 import { FormsModule } from '@angular/forms';
 
@@ -50,5 +50,8 @@ import { RouterService } from './services/router-service/router.service';
 export class AppModule { 
   constructor() {
     library.add(faInfoCircle);
+    library.add(faPlay);
+    library.add(faPause);
+    library.add(faStop);
   }
 }

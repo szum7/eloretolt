@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
-class AudioFile {
+export class AudioFile {
     title: string;
     src: string;
 
     constructor(title: string, src: string) {
         this.title = title;
         this.src = src;
+    }
+
+    isEmpty(): boolean {
+        return !this.title && !this.src;
     }
 }
 
@@ -22,7 +26,7 @@ export class TrackListComponent {
     constructor(){
         this.tracks = [
             new AudioFile("DnD", "../../../assets/tracks/aeriform_Secret-160.mp3"),
-            new AudioFile("DnD", "../../../assets/tracks/horse.ogv")
+            new AudioFile("Horsey", "../../../assets/tracks/horse.ogv")
         ];
     }
 }
