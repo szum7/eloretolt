@@ -1,0 +1,9 @@
+<div>
+    <button (click)="play()">PLAY</button>
+    <button (click)="pause()">PAUSE</button>
+    <button (click)="stop()">STOP</button>
+    <div class="progressbar" [ngStyle]="{
+        'width.%':progress, 
+        'background-color':colour
+    }"></div>
+</div>
