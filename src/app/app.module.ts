@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faInfoCircle, faCaretRight, faCaretLeft, faSun, faCog, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 // Components
 import { AppComponent } from './app.component';
@@ -25,6 +28,7 @@ import { RouterService } from './services/router-service/router.service';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     RouterModule.forRoot([
       { path: '**', component: HomePage }
     ], { useHash: true })
@@ -35,4 +39,8 @@ import { RouterService } from './services/router-service/router.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    library.add(faInfoCircle);
+  }
+}
