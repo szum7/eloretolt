@@ -9,6 +9,7 @@ import { faInfoCircle, faCaretRight, faCaretLeft, faSun, faCog, faTimes } from '
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
+import { TrackListComponent } from './components/track-list/track-list.component';
 
 // Pages
 import { HomePage } from './pages/home-page/home.page';
@@ -23,6 +24,7 @@ import { RouterService } from './services/router-service/router.service';
     AppComponent,
     NavComponent,
     LoadingScreenComponent,
+    TrackListComponent,
     // Pages
     HomePage
   ],

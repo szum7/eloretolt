@@ -1,0 +1,13 @@
+<!--<audio controls>
+  <source src="../../../assets/tracks/aeriform_Secret-160.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>-->
+
+<div id="main">
+    <button (click)="play()">PLAY</button>
+    <button (click)="stop()">PAUSE</button>
+    <div class="progressbar" [ngStyle]="{
+        'width.%':progress, 
+        'background-color':colour
+    }"></div>
+</div>
