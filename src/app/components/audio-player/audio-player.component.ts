@@ -13,6 +13,14 @@ export class AudioPlayerComponent implements OnInit {
     progressInterval;
     player;
 
+    get progressBar(): number {
+        return (this.player.currentTime / this.player.duration) * 100;
+    }
+
+    set progressBar(value: number) {
+        this.player.currentTime = this.player.duration * (value / 100);
+    }
+
     constructor() {        
     }
 

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faInfoCircle, faCaretRight, faCaretLeft, faSun, faCog, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { SliderModule } from 'primeng/slider';
+import { FormsModule } from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -33,6 +35,8 @@ import { RouterService } from './services/router-service/router.service';
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    SliderModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '**', component: HomePage }
     ], { useHash: true })
