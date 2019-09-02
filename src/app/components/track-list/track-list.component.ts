@@ -25,7 +25,7 @@ export class TrackListComponent {
 
     constructor(){
         this.tracks = [
-            new AudioFile("DnD", "../../../assets/tracks/aeriform_Secret-160.mp3"),
+            new AudioFile("Aeriform - Secret, 2006", "../../../assets/tracks/aeriform_Secret-160.mp3"),
             new AudioFile("Horsey", "../../../assets/tracks/horse.ogv")
         ];
     }

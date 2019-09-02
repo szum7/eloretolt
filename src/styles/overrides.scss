@@ -26,7 +26,7 @@ body .volume .ui-slider .ui-slider-handle{
     width:15px;
     height:15px;
     top:5px;
-    background: #{$volumeFg};
+    background: #{$volumeLaneFg};
 }
 body .volume .ui-slider .ui-slider-handle:hover,
 body .progress-lane .ui-slider .ui-slider-handle:hover{
@@ -38,4 +38,10 @@ body .volume .ui-slider.ui-slider-horizontal{
 }
 body .volume .ui-slider .ui-slider-range{
     border-radius: 15px;
+}
+body .volume .ui-slider{
+    background-color:#{$volumeLaneBg};
+}
+body .ui-slider .ui-slider-range{
+    background-color:#{$sliderColor};
 }
