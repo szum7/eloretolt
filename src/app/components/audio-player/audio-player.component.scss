@@ -1,7 +1,11 @@
-$timeWidth: 65;
+$timeWidth: 80;
+$volumeWidth: 100;
 $height: 38;
 $btnWidth: 40;
 
+.track {
+    margin-bottom: 2px;
+}
 .section{
     vertical-align: top;
     display: inline-block;
@@ -24,7 +28,7 @@ $btnWidth: 40;
 }
 .progress-lane{
     position: relative;
-    width: calc(100% - #{(($timeWidth * 2) + ($btnWidth * 2) + 2) + 'px'});
+    width: calc(100% - #{(($timeWidth * 2) + ($btnWidth * 2) + 2) + $volumeWidth + 'px'});
 }
 .progress-lane .title{
     position: absolute;
@@ -34,4 +38,8 @@ $btnWidth: 40;
     bottom:0;
     right:0;
     pointer-events: none;
+}
+.section.volume{
+    width: #{$volumeWidth + 'px'};
+    padding:15px 0 15px 10px;
 }

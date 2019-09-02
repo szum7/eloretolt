@@ -1,18 +1,36 @@
-body .ui-slider.ui-slider-horizontal,
-body .ui-slider .ui-slider-handle{
+body .progress-lane .ui-slider.ui-slider-horizontal,
+body .progress-lane .ui-slider .ui-slider-handle{
     height:38px;
     border-radius:0;
 }
-body .ui-slider.ui-slider-horizontal{
+body .progress-lane .ui-slider.ui-slider-horizontal{
     background:#ddd;
 }
-body .ui-slider .ui-slider-handle{
+body .progress-lane .ui-slider .ui-slider-handle{
     border-radius:0;
     border-color:#aaa;
 }
-body .ui-slider.ui-slider-horizontal .ui-slider-handle{
+body .progress-lane .ui-slider.ui-slider-horizontal .ui-slider-handle{
     top:8px;
 }
-body .ui-corner-all{
+body .progress-lane .ui-corner-all{
     border-radius:0;
+}
+
+
+body .volume .ui-slider .ui-slider-handle{
+    border-radius:0;
+    border-color:#aaa;
+}
+body .volume .ui-slider .ui-slider-handle{
+    width:15px;
+    height:38px;
+    top:-7px;
+}
+body .volume .ui-slider.ui-slider-horizontal{
+    height:8px;
+    border-radius:0;
+}
+body .volume .ui-slider .ui-slider-range{
+    border-radius: 0;
 }
