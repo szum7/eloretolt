@@ -10,13 +10,11 @@
     </div><div class="section volume">
         <p-slider [min]="0" [max]="1" [step]="0.05" [(ngModel)]="player.volume"></p-slider>
     </div><div class="section time current-time">
-        <p>{{currentTime}}</p>
+        <p>{{currentTime}} / {{duration}}</p>
     </div><div class="section progress-lane">
         <p-slider [(ngModel)]="progressBar"></p-slider>
         <div class="title">
             <p>{{track.title}}</p>
         </div>
-    </div><div class="section time duration">
-        <p>{{duration}}</p>
     </div>
 </div>

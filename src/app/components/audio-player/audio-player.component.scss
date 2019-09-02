@@ -1,4 +1,4 @@
-$timeWidth: 80;
+$timeWidth: 150;
 $volumeWidth: 100;
 $height: 38;
 $btnWidth: 40;
@@ -14,7 +14,7 @@ $btnWidth: 40;
 .section p{
     margin:0;
     padding:0;
-    padding-top:5px;
+    padding-top:6px;
 }
 .btn{
     cursor:pointer;
@@ -28,7 +28,7 @@ $btnWidth: 40;
 }
 .progress-lane{
     position: relative;
-    width: calc(100% - #{(($timeWidth * 2) + ($btnWidth * 2) + 2) + $volumeWidth + 'px'});
+    width: calc(100% - #{($timeWidth + ($btnWidth * 2) + 8 + $volumeWidth) + 'px'});
 }
 .progress-lane .title{
     position: absolute;
