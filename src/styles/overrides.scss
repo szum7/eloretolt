@@ -1,14 +1,17 @@
+@import "./../app/utilities/variables.scss";
+
 body .progress-lane .ui-slider.ui-slider-horizontal,
 body .progress-lane .ui-slider .ui-slider-handle{
     height:38px;
     border-radius:0;
+    border:none;
 }
 body .progress-lane .ui-slider.ui-slider-horizontal{
-    background:#ddd;
+    background:#{$laneBg};
 }
 body .progress-lane .ui-slider .ui-slider-handle{
     border-radius:0;
-    border-color:#aaa;
+    background: #{$handleBg};
 }
 body .progress-lane .ui-slider.ui-slider-horizontal .ui-slider-handle{
     top:8px;
@@ -19,18 +22,20 @@ body .progress-lane .ui-corner-all{
 
 
 body .volume .ui-slider .ui-slider-handle{
-    border-radius:0;
-    border-color:#aaa;
-}
-body .volume .ui-slider .ui-slider-handle{
+    border:none;
     width:15px;
-    height:38px;
-    top:-7px;
+    height:15px;
+    top:5px;
+    background: #{$volumeFg};
+}
+body .volume .ui-slider .ui-slider-handle:hover,
+body .progress-lane .ui-slider .ui-slider-handle:hover{
+    border:none;
 }
 body .volume .ui-slider.ui-slider-horizontal{
     height:8px;
-    border-radius:0;
+    border-radius: 15px;
 }
 body .volume .ui-slider .ui-slider-range{
-    border-radius: 0;
+    border-radius: 15px;
 }

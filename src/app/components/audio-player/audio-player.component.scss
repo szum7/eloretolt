@@ -1,10 +1,12 @@
-$timeWidth: 150;
+@import "../../utilities/variables.scss";
+
+$timeWidth: 130;
 $volumeWidth: 100;
 $height: 38;
 $btnWidth: 40;
 
-.track {
-    margin-bottom: 2px;
+.track{
+    background:#{$laneBg};
 }
 .section{
     vertical-align: top;
@@ -18,7 +20,6 @@ $btnWidth: 40;
 }
 .btn{
     cursor:pointer;
-    background:#ddd;
     margin:0;
     border-radius:0;
 }
@@ -27,6 +28,7 @@ $btnWidth: 40;
     text-align: center;    
 }
 .progress-lane{
+    color:#{$titleFg};
     position: relative;
     width: calc(100% - #{($timeWidth + ($btnWidth * 2) + 8 + $volumeWidth) + 'px'});
 }
@@ -41,5 +43,17 @@ $btnWidth: 40;
 }
 .section.volume{
     width: #{$volumeWidth + 'px'};
-    padding:15px 0 15px 10px;
+    padding:15px;
+}
+
+.track .btn{
+    background: #{$buttonBg};
+    color:#{$buttonFg};
+}
+.section.time{
+    background: #{$timeBg};
+    color:#{$timeFg};
+}
+.section.volume{
+    background:#{$volumeBg};
 }
