@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AudioFile } from '../track-list/track-list.component';
+import { TimeConverter } from 'src/app/utilities/time-converter.util';
 
 @Component({
     selector: 'app-audio-player-component',
@@ -26,11 +27,11 @@ export class AudioPlayerComponent implements OnInit {
     }
 
     get currentTime(): string {
-        return "00:00"; //this.player.currentTime;
+        return TimeConverter.secondsToString(this.player.currentTime);
     }
 
     get duration(): string {
-        return "02:18"; //this.player.duration;
+        return TimeConverter.secondsToString(this.player.duration);
     }
 
     constructor() {        
